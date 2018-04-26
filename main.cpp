@@ -19,8 +19,6 @@
 #include <cstdlib>
 #include <vector>
 #include "Board.h"
-#include "AI.h"
-#include "bpnet.h"
 
 #define LOOKAHEAD 4
 #define NUM_RAND_GAMES 100
@@ -161,7 +159,6 @@ int programMain(char n, bool used) {
     ansi_init();
     
     char ans = 'y';
-    bpnet network;
     printf("Run: \n[a]i \nrandom [m]axing\n[r]andom\n[d]ebug\n[s]ingleplayer\nSelection : ");
     if (!used) std::cin >> ans;
     else ans = n;
