@@ -1,6 +1,6 @@
 language: cpp
 compiler:
-- g++-7
+- g++
 
 script:
   - make
