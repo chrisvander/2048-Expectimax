@@ -246,14 +246,7 @@ double Board::calculateScore(bool debug) {
     // These determine the performance of the AI based on what
     // makes a board "good" or "bad."
     if (debug)printf("\n\n");
-
-    // DIFFERENT WEIGHTS
-    // int weights[16] = {
-    //    6, 5, 4, 3,
-    //    5, 4, 3, 2,
-    //    4, 3, 2, 1,
-    //    3, 2, 1, 0
-    // };
+    
     int weights[16] = { // this table works the best usually
         15, 14, 13, 12,
         8,  9,  10, 11,
@@ -274,7 +267,6 @@ double Board::calculateScore(bool debug) {
             }
         }
     }
-    score=150+score;
     if (debug) printf("Weight Score: %f", score);
 
     int count = 0;
