@@ -16,7 +16,11 @@ You don't have to use `make`, any OpenMP-compatible C++ compiler should work.
 ## Modes
 ### AI
 Runs with an AI. Specify a number for the search tree depth. For example, 4 is a moderate speed, decent accuracy search to start at.
-### Random Search
+### Random Maxing
 Plays the game several hundred times for each possible moves and picks the move that results in the highest average score.
 ### Random
 Just plays it randomly once. No idea why I added this.
+### Debug
+View the heuristic score of any possible board state.
+### Singleplayer
+Just play 2048! Provides heuristic scores and before/after compacting of columns and rows for debug purposes.
