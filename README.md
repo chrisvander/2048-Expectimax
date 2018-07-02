@@ -1,7 +1,22 @@
 [![Build Status](https://travis-ci.org/chrisvander/2048-Expectimax.svg?branch=master)](https://travis-ci.org/chrisvander/2048-Expectimax)
 
 # 2048 AI
-Uses the Expectimax algorithm for the AI. Uses multithreading via OpenML. The makefile works on a macOS system with gcc installed via Homebrew.
+An in-console game of 2048. Play as single player and see what the heuristics do, or run with an AI at multiple search tree depths and see the highest score it can get.
 
-## To Build
-Use a compiler that has OpenML support. Build as a standard multi-file C++ program with the OpenMP flag.
+## To download and install
+For a machine that has g++ installed, getting this running is as easy as 
+```
+git clone https://github.com/chrisvander/2048-Expectimax
+cd 2048-Expectimax
+make
+./out
+```
+You don't have to use `make`, any OpenMP-compatible C++ compiler should work.
+
+## Modes
+### AI
+Runs with an AI. Specify a number for the search tree depth. For example, 4 is a moderate speed, decent accuracy search to start at.
+### Random Search
+Plays the game several hundred times for each possible moves and picks the move that results in the highest average score.
+### Random
+Just plays it randomly once. No idea why I added this.
