@@ -1,6 +1,6 @@
+# 2048 AI
 [![Build Status](https://travis-ci.org/chrisvander/2048-Expectimax.svg?branch=master)](https://travis-ci.org/chrisvander/2048-Expectimax)
 
-# 2048 AI
 An in-console game of 2048. Play as single player and see what the heuristics do, or run with an AI at multiple search tree depths and see the highest score it can get.
 
 ## To download and install
