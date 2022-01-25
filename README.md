@@ -9,7 +9,7 @@ For a machine that has g++ installed, getting this running is as easy as
 git clone https://github.com/chrisvander/2048-Expectimax
 cd 2048-Expectimax
 make
-./out
+./game
 ```
 You don't have to use `make`, any OpenMP-compatible C++ compiler should work.
 
